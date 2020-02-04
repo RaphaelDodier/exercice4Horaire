@@ -7,20 +7,20 @@ body {
     /* Le mode d'affichage  est grid */
     display: grid;
     /* 
-  le modèle colonne permet l'affichage sur 3 colonnes
-  chaque colonne mesure 100px.
-  cette dimension reste fixe
-*/
-    grid-template-columns: 100px 100px 100px;
+    le modèle colonne permet l'affichage sur 3 colonnes
+    chaque colonne mesure 100px.
+    cette dimension reste fixe
+    */
+    grid-template-columns: 1fr 1fr 1fr;
     /* l'esplace entre les élément du grid  */
     grid-gap: 12px;
-    background-color: #fff;
+    background-color: rgb(42, 78, 197);
     color: rgb(96, 165, 108);
 }
 
 /* les éléments du conteneur */
 .boite {
-    background-color: #444;
+    background-color: rgb(68, 68, 68);
     color: #fff;
     border-radius: 5px;
     padding: 20px;
