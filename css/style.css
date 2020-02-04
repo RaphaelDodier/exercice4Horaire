@@ -1,29 +1,99 @@
-body {
-    margin: 40px;
-}
+ body {
+     margin: 40px;
+ }
 
-/* le conteneur grid */
-.conteneur {
-    /* Le mode d'affichage  est grid */
-    display: grid;
-    /* 
-  le modèle colonne permet l'affichage sur 3 colonnes
-  chaque colonne mesure 100px.
-  cette dimension reste fixe
+ /*
+        le modèle colonne permet l'affichage sur 3 colonnes
+        chaque colonne mesure 100px.
+        cette dimension reste fixe
+        */
+ .conteneur {
+     display: grid;
+     grid-template-columns: 100px 100px 100px;
+     grid-gap: 10px;
+     background-color: #fff;
+     color: #444;
+ }
+
+ .boite {
+     background-color: #444;
+     color: #fff;
+     border-radius: 5px;
+     padding: 20px;
+     font-size: 150%;
+ }
+
+ /*
+définir l'étendue de chaque classe
 */
-    grid-template-columns: 100px 100px 100px;
-    /* l'esplace entre les élément du grid  */
-    grid-gap: 12px;
-    background-color: #fff;
-    color: #444;
-}
+ .f {
+     /* commence à la ligne verticale 2 */
+     /* termine à la ligne verticale 3 */
+     /* commence à la ligne horizontale 1 */
+     /* termine à la ligne horizontale 3 */
 
-/* les éléments du conteneur */
-.boite {
-    background-color: #444;
-    color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    font-size: 150%;
-}
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 1;
+     grid-row-end: 2;
+ }
 
+ .b {
+     /* commence à la ligne verticale 2 */
+     /* termine à la ligne verticale 3 */
+     /* commence à la ligne horizontale 2 */
+     /* termine à la ligne horizontale 3 */
+     grid-column-start: 2;
+     grid-column-end: 3;
+     grid-row-start: 2;
+     grid-row-end: 3;
+
+ }
+
+ .d {
+     /* commence à la ligne verticale 3 */
+     /* termine à la ligne verticale 4 */
+     /* commence à la ligne horizontale 2 */
+     /* termine à la ligne horizontale 3 */
+
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 2;
+     grid-row-end: 3;
+ }
+
+ .c {
+     /* commence à la ligne verticale 1 */
+     /* termine à la ligne verticale 2 */
+     /* commence à la ligne horizontale 1 */
+     /* termine à la ligne horizontale 2 */
+
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 1;
+     grid-row-end: 2;
+ }
+
+ .e {
+     /* commence à la ligne verticale 1 */
+     /* termine à la ligne verticale 2 */
+     /* commence à la ligne horizontale 2 */
+     /* termine à la ligne horizontale 3 */
+
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 3;
+ }
+
+ .a {
+     /* commence à la ligne verticale 1 */
+     /* termine à la ligne verticale 2 */
+     /* commence à la ligne horizontale 2 */
+     /* termine à la ligne horizontale 3 */
+
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 2;
+ }
