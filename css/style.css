@@ -2,6 +2,7 @@
      margin: 40px;
  }
 
+
  /*
         le modèle colonne permet l'affichage sur 3 colonnes
         chaque colonne mesure 100px.
@@ -40,6 +41,7 @@ définir l'étendue de chaque classe
      grid-column: 1;
      grid-row: 2;
  }
+
 
  .d {
      grid-column: 2;
