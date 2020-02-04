@@ -1,0 +1,29 @@
+body {
+    margin: 40px;
+}
+
+/* le conteneur grid */
+.conteneur {
+    /* Le mode d'affichage  est grid */
+    display: grid;
+    /* 
+  le modèle colonne permet l'affichage sur 3 colonnes
+  chaque colonne mesure 100px.
+  cette dimension reste fixe
+*/
+    grid-template-columns: 100px 100px 100px;
+    /* l'esplace entre les élément du grid  */
+    grid-gap: 12px;
+    background-color: #fff;
+    color: #444;
+}
+
+/* les éléments du conteneur */
+.boite {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
