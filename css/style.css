@@ -15,7 +15,7 @@ body {
     /* l'esplace entre les élément du grid  */
     grid-gap: 12px;
     background-color: #fff;
-    color: #444;
+    color: rgb(96, 165, 108);
 }
 
 /* les éléments du conteneur */
