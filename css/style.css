@@ -1,0 +1,31 @@
+/*# Entete
+--------------------------------------------------------------*/
+header {
+  text-align: center;
+}
+
+header h1, header h2 {
+  text-shadow: 2px 2px 9px #64f021;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+header h2 {
+  font-size: 2em;
+}
+
+header h3 {
+  font-size: 1.5em;
+}
+
+/* ------------------------------------------------------------
+# Tableau
+--------------------------------------------------------------*/
+/*# Element
+--------------------------------------------------------------*/
+body {
+  background-color: #f7d8aa;
+}
+/*# sourceMappingURL=style.css.map */
