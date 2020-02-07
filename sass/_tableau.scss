@@ -1,24 +1,14 @@
 #horaire{
     display: grid;
     grid-template-columns: 0.2fr repeat(5, 1fr);
-    grid-template-rows: repeat(10,50px);
-    grid-gap: 10px;
+    grid-template-rows: repeat(12,50px);
     background-color: rgb(224, 224, 224);
     text-align: center;
+    border: 1px solid #aaa;
 
-    .veille{
-        color: red;
-        background-color: aquamarine;
+    div{
+        border: 1px solid #aaa;
     }
-
-    .projet{
-        color: green;
-        background-color: yellow;
-    }
-
-    // :nth-child(-n+5){
-    //     // background-color: rgb(239, 250, 144);
-    // }
 
     :nth-child(1){
         grid-column: 2;
@@ -55,46 +45,116 @@
         grid-area: 1/2/1/-1;
     }
 
-    // :nth-child(-n+11){
-    //     // background-color: rgb(239, 250, 144);
-    // }
-
+    :nth-child(n+7):nth-child(-n+12){
+        border: 1px solid black;
+    }
+    // 8h
     :nth-child(7){
         grid-row: 2;
         grid-column: 1;
         z-index: 2;
     }
+    // 11h
     :nth-child(8){
-        grid-row: 3;
-        grid-column: 1;
-        z-index: 2;
-    }
-    :nth-child(9){
-        grid-row: 4;
-        grid-column: 1;
-        z-index: 2;
-    }
-    :nth-child(10){
         grid-row: 5;
         grid-column: 1;
         z-index: 2;
     }
-    :nth-child(11){
+    // 12h
+    :nth-child(9){
         grid-row: 6;
         grid-column: 1;
         z-index: 2;
     }
-    :nth-child(12){
+    // 13h
+    :nth-child(10){
         grid-row: 7;
         grid-column: 1;
         z-index: 2;
     }
+    // 16h
+    :nth-child(11){
+        grid-row: 10;
+        grid-column: 1;
+        z-index: 2;
+    }
+    // 18h
+    :nth-child(12){
+        grid-row: 12;
+        grid-column: 1;
+        z-index: 2;
+    }
     .colonne_heure{
-        background-color: rgb(239, 250, 144);
+        background-color: rgb(198, 250, 131);
         grid-area: 2/1/-1/1;
     }
 
 
+    .veille{
+        color: red;
+        background-color: aquamarine;
+    }
+
+    .projet{
+        color: green;
+        background-color: yellow;
+    }
+
+    .video{
+        color: blue;
+        background-color: orange;
+    }
+
+    .stage{
+        background-color: black;
+        color: white;
+    }
+
+    .video>p{
+        margin: 2% 0;
+    }
+
+    .lundi {
+        grid-row: 2 / 6;
+        grid-column: 2;
+    }
+    .lundi>p{
+        margin: 2% 0; 
+    }
+
+    .mardi{
+        grid-row: 8 / 12;
+        grid-column: 3;
+    }
+
+    .mercredi_1{
+        grid-column: 4;
+        grid-row: 2/5;
+    }
+
+    .stage{
+        grid-column: 4;
+        grid-row: 5/6;
+    }
+
+    .stage>p{
+            margin:1px;
+    }
+
+    .mercredi_2{
+        grid-column: 4;
+        grid-row: 7/12;
+    }
+
+    .vendredi_1{
+        grid-column: 6;
+        grid-row: 2/5;
+    }
+
+    .vendredi_2{
+        grid-column: 6;
+        grid-row: 6/10;
+    }
 
 }
 
