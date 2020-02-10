@@ -1,14 +1,38 @@
+//css responsable du contenu horaire
+
+/*
+author:Raphael Dodier
+date: 2020-02-10
+*/
+
 #horaire{
     display: grid;
     grid-template-columns: 0.2fr repeat(5, 1fr);
-    grid-template-rows: repeat(12,50px);
+    grid-template-rows:  repeat(12,auto);
     background-color: rgb(224, 224, 224);
     text-align: center;
     border: 1px solid #aaa;
+    margin: 2% 2% 0 2%;
 
     div{
         border: 1px solid #aaa;
+        p{
+            margin: 2% 0;
+        }
+        p:first-child{
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 4px;
+        }
+    
+        p:nth-child(2){
+            font-size: 20px;
+            font-weight: bold;
+    
+        }
     }
+
+
 
     :nth-child(1){
         grid-column: 2;
@@ -91,35 +115,35 @@
 
 
     .veille{
-        color: red;
         background-color: aquamarine;
     }
 
     .projet{
-        color: green;
         background-color: yellow;
     }
 
     .video{
-        color: blue;
         background-color: orange;
     }
+
 
     .stage{
         background-color: black;
         color: white;
+        grid-column: 4;
+        grid-row: 5/6;
+        line-height: 50px;
+            p{
+                margin:1px;
+                font-size: 35px;
+        }
     }
 
-    .video>p{
-        margin: 2% 0;
-    }
+
 
     .lundi {
         grid-row: 2 / 6;
         grid-column: 2;
-    }
-    .lundi>p{
-        margin: 2% 0; 
     }
 
     .mardi{
@@ -130,15 +154,6 @@
     .mercredi_1{
         grid-column: 4;
         grid-row: 2/5;
-    }
-
-    .stage{
-        grid-column: 4;
-        grid-row: 5/6;
-    }
-
-    .stage>p{
-            margin:1px;
     }
 
     .mercredi_2{
@@ -156,5 +171,42 @@
         grid-row: 6/10;
     }
 
+   
+
+
+   
+
 }
+
+@media screen and (max-width:575px){
+    #horaire{
+        h2{
+            font-size: 15px;
+            // grid-template-rows: repeat(12,20px);
+        }
+
+        div{
+
+            p{
+                font-size: 12px;
+            }
+
+            p:first-child{
+                font-size: 15px;
+            }
+        
+            p:nth-child(2){
+                font-size: 14px;
+        
+            }
+        }
+
+        .stage{
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
 
